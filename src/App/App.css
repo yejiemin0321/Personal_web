@@ -1,0 +1,81 @@
+.profile{
+ height: 100%;
+}
+.left {
+  float: left;
+  width: 40%;
+  position: fixed;
+  top:0;
+  left:10%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-contener {
+  margin: auto auto;
+  padding-top: 10%;
+  width: 200px;
+  height: 200px;
+  padding-left: 10%;
+} 
+.photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.namebox{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 50px;
+  color:black;
+  padding-top: 40%;
+  padding-right: 30%;
+}
+.contact{
+  font-size: 20px;
+  width: max-content;
+  color:black;
+}
+.present{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  width: max-content;
+}
+ul{
+  list-style-type:none;
+  margin:auto auto auto auto;
+  padding:0;
+  overflow:hidden;
+  border: 1px solid #e7e7e7;
+  /* background-color: #f3f3f3; */
+  height: 100%;
+  width:fit-content;
+  border-radius: 20%;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  color:#666;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active){
+  background-color: rgb(174, 205, 247);
+}
+li a.active{
+  color:white;
+  background-color:rgb(160, 192, 240); 
+}
