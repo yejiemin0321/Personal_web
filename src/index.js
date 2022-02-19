@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Profile from './App/Profile';
+import Navigator from './App/Navigator';
+import Contact from './App/Contact';
+import Experience from './App/Experience';
+import { HashRouter as Router, Route, Redirect } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router >
+      <Redirect from="/" to="/profile" />
+      <div className='main'>
+
+        <Route path='/profile' exact component={Profile}></Route>
+        <Route path='/contact' exact component={Contact}></Route>
+        <Route path='/experience' exact component={Experience}></Route>
+
+      </div>
+      <div className='link-top'></div>
+      <div className='navigator'>
+        <Navigator />
+      </div>
+    </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
